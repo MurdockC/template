@@ -1,118 +1,134 @@
 
-
 <html>
-<head>
-	<link rel="stylesheet" type-="text/css" href="/assets/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-	<script  type="text/javascript" href="/assets/js/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-</head>
+	<head>
+		<link rel="stylesheet" type-="text/css" href="/assets/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+		<script  type="text/javascript" href="assets/js/main.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+	  <header>
+			<script type="text/javascript">
 
-<body>
-	<header class="container_Fullwidth gradient_Bg">
-<div class="nav container_960">
-  <div class="logo_Container">
-    <img class="logo" src="assets/images/logo.png">
-  </div>
-  <a onclick="showMobileNav()" class="nav_Anchor-wrapper" href"#">
-  <div class="nav_Button">
-    <div class="burger_Bar"></div>
-    <div class="burger_Bar"></div>
-    <div class="burger_Bar"></div>
-  </div></a>
-</div>
+			function doThis() {
+			    var hidden = document.getElementById('mobile-hide');
+			    var menu = document.getElementById('thisContent');
+			    if (menu.style.display === 'none') {
+			        menu.style.display = 'flex';
+			        hidden.style.display = 'none';
 
-<div id="mobile_Nav--expanded" class="hidden">
-  <div class="hidden_Button">Company Drivers</div>
-  <div class="hidden_Button">Owner Operators</div>
-</div>
-
-
-	</header>
-
-	<div class="container_Fullwidth campaign">
-		<div class="container_960">
-			<div class="column campain_Text-container">
-				<h1>Come Work Here.</h1>
-				<h2>It's alright, I guess.</h2>
-				<p class="header_Callout-p">The pay is ok, and Rick occasionally brings donuts.</p>
-					<div class="button_Container">
-						<div class="button_Primary">Apply now!</div>
-						<div class="button_Secondary">Fill Out Our Short Form</div>
-					</div>
-			</div>
-			<div class="column img_Container">
-				<img src="assets/images/truck.png" alt="Black Mac Truck">
-			</div>
-		</div>
-	</div>
-
-	<div class="container_Fullwidth light_Bg">
-		<div class="container_960">
-			<div class="column centered_Text">
-				<h1 class="column_Title">Hello World</h1>
-				<p class="column_Paragraph">as;k as;ks;loijfhuggd hfuidhfuagh aiduhfiuhf  asidhfiuhasdf asudhfiu fhiasdufhaiu</p>
-			</div>
-			<div class="column centered_Text">
-				<h1 class="column_Title">Hello World</h1>
-				<p class="column_Paragraph">as;k as;ks;loijfhuggd hfuidhfuagh aiduhfiuhf  asidhfiuhasdf asudhfiu fhiasdufhaiu</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="container_Fullwidth gradient_Bg">
-		<div class="container_960">
-			<div class="column">
-				<div class="form_Container">
-					<h3 class="">Hello World</h3>
-					<div class="form_Column-row">
-						<form class="form_Column">
-							<label class="form_Label" for="firstName">First Name</label>
-							<input class="form_Input" type="text" name="firstname" placeholder="First Name">
-							<label class="form_Label" for="lastName">Last Name</label>
-							<input class="form_Input" type="text" name="lastname" placeholder="Last Name">
-							<label class="form_Label" for="email">Email Address</label>
-							<input class="form_Input" type="text" name="email" placeholder="Email Address">
-							<label class="form_Label" for="phoneNumber">Phone Number</label>
-							<input class="form_Input" type="text" name="phone" placeholder="Phone Number">
-							<label class="form_Label" for="cdl">Do you have a CDL?</label>
-
-							<section id="first" class="section">
-    <div class="container">
-      <input type="radio" name="group1" id="radio-1">
-      <label for="radio-1"><span class="radio">Coffee</span></label>
-    </div>
-    <div class="container">
-      <input type="radio" name="group1" id="radio-2">
-      <label for="radio-2"><span class="radio">Tea</span></label>
-    </div>
-    <div class="container">
-      <input type="radio" name="group1" id="radio-3">
-      <label for="radio-3"><span class="radio">Cappuccino</span></label>
-    </div>
-</section>
+			    } else {
+			        menu.style.display = 'none';
+			        hidden.style.display = 'block';
+			    }
+			}
+			</script>
 
 
 
-
-							<input  class="radio_Button" type="radio" name="cdl" value="yes">Yes
-							<input class="radio_Button" type="radio" name="cdl" value="no">No
-							<div class="button button_Submit button_Primary">Submit</div>
-						</form>
-					</div>
+			<div class="container-full-width primary-bg flex centered-contents">
+				<div class="container-1200 flex nav">
+					<div class="logo"></div>
+					<a onclick="doThis()">
+						<div class="nav-icon">
+							<div class="icon-bar"></div>
+							<div class="icon-bar"></div>
+							<div class="icon-bar"></div>
+						</div>
+					</a>
 				</div>
 			</div>
-		</div>
-	</div>
-	<footer class="footer container_Fullwidth">
-		<div class="centered_Text">
-			<p>Hello World</p>
-			<small><?php echo $company ?> is an Equal Opportunity Employer</small><br>
-			<small><?php echo "&copy; " . date("Y"); ?> <?php echo $company ?> | <a href="/privacy">Privacy</a></small>
-		</div>
-	</footer>
+			<!-- below content is hidden until hamburger button is pushed -->
+			<div id="thisContent" class="mobile-nav flex-column ">
+				<a href="#"><div class="menu-button flex centered-contents padding-lg">One</div></a>
+				<a href="#"><div class="menu-button flex centered-contents padding-lg">Two</div></a>
+				<a href="#"><div class="menu-button flex centered-contents padding-lg">Three</div></a>
+			</div>
+
+			<!-- this div becomes hidden while viewing mobile nav -->
 
 
-</body>
+			<section id="campaign" class="container-fullwidth campaign-bg flex centered-contents">
+				<div class="container-1200 flex wrap">
+					<div class="flex margin-lg flex-column ">
+						<h1 class="margin-lg self-start margin-tb-sm">You could work here.</h1>
+						<h2 class="margin-lg self-start margin-tb-sm ">I guess</h2>
+						<p class="self-start margin-lg margin-tb-sm ">The pay is okay, and sometimes Jim brings donuts.</p>
+					</div>
+					<div class="flex margin-lg flex-column ">
+						<h1 class="margin-lg self-start margin-tb-sm">You could work here.</h1>
+						<h2 class="margin-lg self-start margin-tb-sm ">I guess</h2>
+						<p class="self-start margin-lg margin-tb-sm ">The pay is okay, and sometimes Jim brings donuts.</p>
+					</div>
+				</div>
+			</section>
+	  </header>
+
+
+
+
+
+
+
+<div id="mobile-hide">
+
+		<section id="body-content" class="container-full-width light-bg centered-contents flex">
+			<div class="container-1200 flex wrap">
+				<div class="flex margin-lg  flex-column primary-bg">
+					<h1 class="margin-lg self-start">Benefits</h1>
+					<p class="self-start margin-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+				</div>
+				<div class="flex margin-lg flex-column primary-bg ">
+					<h1 class="margin-lg self-start">Pay</h1>
+					<p class="self-start margin-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsums</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="form" class="container-full-width alt-bg centered-contents flex">
+			<div class="container-1200 flex wrap">
+				<div class="flex margin-lg  flex-column">
+					<label class="form-label" for="firstname">First & Last Name</label>
+					<input type="text" name="firstname" placeholder="Enter your First & Last Name">
+					<label class="form-label" for="email">Email</label>
+					<input type="text" name="email" placeholder="Enter your Email">
+					<label class="form-label" for="phone">Phone</label>
+					<input type="text" name"phone" placeholder="Enter your Phone Number">
+					<label class="form-label" for="zip">Zip Code</label>
+					<input type="text" name"zip" placeholder="Enter your Zip Code">
+				</div>
+				<div class="flex margin-lg flex-column">
+					<label class="form-label" for="experience">Years of Experience</label>
+						<div class="check-radio-container">
+							<input id="box1"type="checkbox" />
+	    				<label for="box1">Yes</label>
+
+					  	<input id="box2"type="checkbox" />
+					  	<label for="box2">No</label>
+
+					  	<input id="box3"type="checkbox" />
+					  	<label for="box3">Maybe</label>
+						</div>
+					<label class="form-label" for="experience">Current CDL</label>
+						<div class="check-radio-container">
+							<input id="box4"type="radio" name="same" />
+	    				<label for="box4">Yes</label>
+
+					  	<input id="box5"type="radio" name="same"/>
+					  	<label for="box5">No</label>
+						</div>
+						<button class="button_one margin-lg self-center">Button</button>
+				</div>
+			</div>
+		</section>
+
+
+
+	  <footer>
+
+	  </footer>
+
+	</div> <!-- hide section
+	</body>
 </html>
