@@ -9,7 +9,7 @@
 <header>
 		    <div class="container-full-width primary-bg flex centered-contents padding-lg">
 		        <div class="container-1200 flex nav">
-		            <img class="logo" src="assets/images/logo.png">
+		            <img class="logo" src="assets/images/logo.png" alt="Company Logo">
 		            <span class="desktop-hidden flex">
 									<a onclick="doThis()">
 										<div class="nav-icon-container flex">

@@ -15,7 +15,6 @@
 
 		<link rel="shortcut icon" href="<?php echo $siteURL; ?>favicon.ico?v=2">
 
-    <link rel="stylesheet" type-="text/css" href="/assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <script type="text/javascript" href="assets/js/main.js"></script>
 		<title><?php echo $siteTitle; ?> | <?php echo $pageTitle; ?> | <?php echo $phone; ?></title>
